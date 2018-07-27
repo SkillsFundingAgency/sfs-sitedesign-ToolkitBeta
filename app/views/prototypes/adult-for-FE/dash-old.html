@@ -1,0 +1,121 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+        <style>
+
+            .alert-name-grey {
+                display: block;
+                background-color: #6f72af;
+                padding: 7px 15px;
+                margin-top: 5px;
+            }
+
+        </style>
+
+
+<main role="main" id="content">
+     <div class="govuk-width-container">
+  <a href="#" class="govuk-back-link">Back</a>
+
+
+
+    <div class="govuk-width-container">
+  
+            <p class="page-info">UKPRN:12345678</p>
+            <h1 class="govuk-heading-xl">
+  <span class="govuk-caption-xl">CASTERBRIDGE COLLEGE</span> Education and Skills Funding service
+</h1>
+            
+           
+        </div>
+        
+    </div>
+
+
+
+    <div class="grid-row">
+        <div class="column-full">
+
+
+
+
+            <section>
+
+
+
+                <div class="grid-row">
+                    <ul>
+                        <div class="service-transaction">
+                            <li class="column-third margin-top">
+                                <a id="apprenticeships" class="dashboard-links" href="/home/apprenticeship-service?AuthoriseBasedOnRoles=False">
+                                    <span id="apprenticeship-service" class="service-name">Apprenticeship service</span>
+                                    
+                                </a>
+                            </li>
+                        </div>
+
+                        <div class="service-transaction">
+                            <li class="column-third margin-top">
+                                <a id="contracts" class="dashboard-links" href="/home/contract-service?AuthoriseBasedOnRoles=False">
+
+                                    <span id="contracts-service" class="service-name">Contracts and agreements</span>
+                                    <span id="contract-alert" class="alert alert-name-red">3 new alerts to review</span>
+                                </a>
+                            </li>
+                        </div>
+
+                        <div class="service-transaction">
+                            <li class="column-third margin-top">
+                                <a id="allocations" class="dashboard-links" href="statement-summary">
+                                    <span id="allocations-service" class="service-name">Funding statements</span>
+                                    <span id="allocation-alert" class="alert alert-name-red">2 new statements</span>
+                                </a>
+                            </li>
+                        </div>
+
+                        <div class="service-transaction">
+                            <li class="column-third margin-top">
+                                <a id="fundingClaim" class="dashboard-links" href="">
+                                    <span id="funding-claims-service" class="service-name">Payment history</span>
+                                    <span id="reconciliation-alert" class="alert alert-name-green">View payments</span>
+                                </a>
+                            </li>
+                        </div>
+
+
+
+                        <div class="service-transaction">
+                            <li class="column-third margin-top">
+                                <a id="ageReports" class="dashboard-links" href="">
+                                    <span id="age-service" class="service-name">Subcontractor declaration</span>
+                                    <span id="age-alert" class="alert alert-name-green">Make a declaration</span>
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+
+
+
+                <br>
+
+
+                <div class="panel panel-border-wide">
+                    <p>
+                        Find out how this <a href="https://www.gov.uk/performance/sign-sfa-contracts?new" rel="external" title="This will open in a new window">service is performing</a>.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    
+
+    </main>
+
+{% endblock %}
