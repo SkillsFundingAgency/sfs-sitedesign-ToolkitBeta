@@ -6,24 +6,43 @@
 
 {% block content %}
 
-<main role="main" id="content">  
-
-<div class="grid-row">
-    <div class="column-two-thirds">
-    
-
-           <h1 class="heading-xlarge">Sign in</h1>
-
-            </div>
-        </div>
-
-
-<div class="form-group">
-  <label class="form-label" for="id">User ID or email address</label>
-  <input class="form-control" id="id" name="id" type="text">
+<main role="main" id="content">
+    <div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
+  alpha
+</strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your
+      <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
 </div>
-<div class="form-group">
-  <label class="form-label" for="Password">Password</label>
+<div class="govuk-width-container">
+  <a href="#" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Sign in</h1>
+        
+      </div>
+    </div> 
+
+            
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="email">
+    User ID or email address
+  </label>
+  <span id="email-hint" class="govuk-hint">
+    We’ll only use this to send you a receipt
+  </span>
+  <input class="govuk-input" id="email" name="email" type="email" aria-describedby="email-hint">
+</div>
+<div class="govuk-form-group">
+  <h1 class="govuk-label-wrapper">
+  <label class="govuk-label govuk-label--m"for="id">Password</label>
   <input class="form-control" id="Password" name="Password" type="text">
 </div>
 <a style="margin-bottom: 20px" href="dash-older" class="button" type="submit">Sign in</a>
@@ -32,8 +51,8 @@
 
 <div class="row margin-top-m"> <div class="col-md-12"> <a data-ng-click="goTo(urls.passwordRecovery, null, true)" title="Forgotten Password" tabindex="0" class="ng-click-active">I forgot my password</a> </div> </div>
 <p><a href="">I don't have an account</a></p>
-    
-
+ </main>   
+</div>
     
 </div>
 
